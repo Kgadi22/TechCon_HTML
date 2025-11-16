@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About TechCon 2024</title>
+  <style>
+    /* Minimal styles for accessibility and clarity */
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px; width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
+    }
+    header, main, footer { max-width: 900px; margin: 0 auto; padding: 1rem; }
+    nav ul { list-style: none; padding: 0; display: flex; gap: 1rem; }
+    a:focus { outline: 3px solid #005fcc; }
+    
+    article { margin-bottom: 2rem; padding: 1rem; border-left: 4px solid #005fcc; }
+    article h2 { margin-top: 0; }
+    
+    .speaker-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+    .speaker-card { border: 1px solid #ddd; padding: 1rem; text-align: center; }
+    .speaker-card img { max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 0.5rem; }
+    .speaker-card h3 { margin: 0.5rem 0; font-size: 1.1rem; }
+    .speaker-card p { margin: 0.25rem 0; font-size: 0.9rem; color: #666; }
+    
+    img { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+  <a class="visually-hidden" href="#main">Skip to main content</a>
+
+  <header>
+    <h1>About TechCon 2024</h1>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- History Article -->
+    <article id="history" aria-labelledby="history-heading">
+      <h2 id="history-heading">History of TechCon</h2>
+      <p>
+        TechCon began in 2015 as a small regional meetup for technology enthusiasts and professionals. With just 150 attendees
+        in its inaugural year, the conference quickly grew to become one of the most anticipated technology events in the region.
+      </p>
+      <p>
+        Over the past nine years, TechCon has evolved to attract thousands of participants from across the globe. The conference
+        has featured talks on emerging technologies including cloud computing, artificial intelligence, web development, and
+        cybersecurity. Each year, TechCon has adapted to the changing landscape of technology, ensuring its content remains
+        relevant and impactful.
+      </p>
+      <p>
+        From its humble beginnings to hosting over 3,000 attendees annually, TechCon has established itself as a premier destination
+        for learning, networking, and innovation in the tech industry.
+      </p>
+      <figure>
+        <img src="techcon-history.jpg" alt="Timeline showing TechCon growth from 2015 to 2024, with key milestones and attendance numbers">
+        <figcaption>TechCon has grown significantly since its founding in 2015.</figcaption>
+      </figure>
+    </article>
+
+    <!-- Mission Article -->
+    <article id="mission" aria-labelledby="mission-heading">
+      <h2 id="mission-heading">Our Mission</h2>
+      <p>
+        TechCon's mission is to foster innovation, collaboration, and knowledge sharing within the global technology community.
+        We believe that bringing together diverse perspectives and expertise accelerates progress and drives meaningful change in the industry.
+      </p>
+      <p>
+        <strong>Our core principles:</strong>
+      </p>
+      <ul>
+        <li><strong>Accessibility:</strong> Making technology education available to all, regardless of experience level or background.</li>
+        <li><strong>Innovation:</strong> Showcasing cutting-edge technologies and forward-thinking ideas that shape the future.</li>
+        <li><strong>Community:</strong> Building a welcoming environment where professionals can connect, learn, and grow together.</li>
+        <li><strong>Excellence:</strong> Delivering high-quality content and experiences that inspire and empower attendees.</li>
+      </ul>
+      <p>
+        Through curated talks, hands-on workshops, networking sessions, and collaborative discussions, TechCon creates an environment
+        where technology leaders and enthusiasts can exchange ideas, explore new opportunities, and advance their careers.
+      </p>
+      <figure>
+        <img src="techcon-mission.jpg" alt="Diverse group of technology professionals collaborating and sharing ideas at TechCon">
+        <figcaption>TechCon brings together professionals from diverse backgrounds to collaborate and innovate.</figcaption>
+      </figure>
+    </article>
+
+    <!-- Past Speakers Article -->
+    <article id="speakers" aria-labelledby="speakers-heading">
+      <h2 id="speakers-heading">Notable Past Speakers</h2>
+      <p>
+        TechCon has been honored to host some of the most influential voices in technology. Here are a few of the notable speakers
+        who have graced our stage and contributed to the success of previous conferences.
+      </p>
+
+      <div class="speaker-gallery">
+
+        <!-- Speaker 1 -->
+        <div class="speaker-card">
+          <img src="speaker-alice-johnson.jpg" alt="Alice Johnson, AI researcher and Chief Technology Officer">
+          <h3>Alice Johnson</h3>
+          <p><strong>Role:</strong> Chief Technology Officer at InnovateTech</p>
+          <p><strong>Notable Talk (2023):</strong> "The Future of Artificial Intelligence in Enterprise Solutions"</p>
+          <p>
+            Alice is a pioneering AI researcher with over 15 years of experience in machine learning and deep learning applications.
+            Her work has influenced major advancements in natural language processing and computer vision.
+          </p>
+        </div>
+
+        <!-- Speaker 2 -->
+        <div class="speaker-card">
+          <img src="speaker-marcus-chen.jpg" alt="Marcus Chen, cloud infrastructure expert and VP of Engineering">
+          <h3>Marcus Chen</h3>
+          <p><strong>Role:</strong> VP of Engineering at CloudScale Systems</p>
+          <p><strong>Notable Talk (2022):</strong> "Building Scalable Cloud Architectures for the Modern Era"</p>
+          <p>
+            Marcus specializes in designing and implementing cloud infrastructure at scale. He has led teams through multiple successful
+            cloud migrations and is a recognized thought leader in distributed systems and DevOps practices.
+          </p>
+        </div>
+
+        <!-- Speaker 3 -->
+        <div class="speaker-card">
+          <img src="speaker-priya-patel.jpg" alt="Priya Patel, cybersecurity expert and Security Director">
+          <h3>Priya Patel</h3>
+          <p><strong>Role:</strong> Director of Security at SecureNet Inc.</p>
+          <p><strong>Notable Talk (2023):</strong> "Zero Trust Architecture: Rethinking Security in a Connected World"</p>
+          <p>
+            Priya is a renowned cybersecurity expert with a focus on secure architecture and incident response. Her research on zero-trust
+            models has shaped industry standards and best practices for modern security frameworks.
+          </p>
+        </div>
+
+        <!-- Speaker 4 -->
+        <div class="speaker-card">
+          <img src="speaker-david-kim.jpg" alt="David Kim, web development leader and Head of Product">
+          <h3>David Kim</h3>
+          <p><strong>Role:</strong> Head of Product at WebFirst Technologies</p>
+          <p><strong>Notable Talk (2024):</strong> "Web Development Trends: From Frontend to Full-Stack Innovation"</p>
+          <p>
+            David brings practical expertise in modern web development frameworks and user experience design. His insights into
+            progressive web applications and responsive design have helped shape contemporary web development practices.
+          </p>
+        </div>
+
+        <!-- Speaker 5 -->
+        <div class="speaker-card">
+          <img src="speaker-sophia-rodriguez.jpg" alt="Sophia Rodriguez, data science expert and Analytics Director">
+          <h3>Sophia Rodriguez</h3>
+          <p><strong>Role:</strong> Director of Data Science at DataInsight Analytics</p>
+          <p><strong>Notable Talk (2022):</strong> "Leveraging Big Data to Drive Business Decisions"</p>
+          <p>
+            Sophia specializes in data science, analytics, and business intelligence. Her work helps organizations transform raw data into
+            actionable insights, and she is passionate about making data science accessible to non-technical stakeholders.
+          </p>
+        </div>
+
+        <!-- Speaker 6 -->
+        <div class="speaker-card">
+          <img src="speaker-james-wilson.jpg" alt="James Wilson, blockchain expert and CTO of a fintech startup">
+          <h3>James Wilson</h3>
+          <p><strong>Role:</strong> CTO at BlockchainVentures</p>
+          <p><strong>Notable Talk (2024):</strong> "Blockchain Technology Beyond Cryptocurrency: Real-World Applications"</p>
+          <p>
+            James is a blockchain developer and innovator exploring practical applications of distributed ledger technology beyond cryptocurrency.
+            His expertise spans smart contracts, supply chain solutions, and decentralized systems architecture.
+          </p>
+        </div>
+
+      </div>
+
+      <p>
+        These speakers represent just a fraction of the incredible talent that has contributed to TechCon over the years. Each one has
+        brought unique perspectives and deep expertise to help our community grow and stay at the forefront of technological innovation.
+      </p>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>
+      copyright © <span id="year">2025</span> TechCon. All rights reserved.
+    </p>
+    <noscript>
+      <p class="visually-hidden">JavaScript is disabled; the year shown may not be current.</p>
+    </noscript>
+  </footer>
+
+  <script>
+    // Set the current year dynamically so the page stays up to date.
+    (function(){
+      try {
+        var y = new Date().getFullYear();
+        document.getElementById('year').textContent = y;
+      } catch(e) {
+        console.error('Failed to set year dynamically', e);
+      }
+    })();
+  </script>
+</body>
+</html>
