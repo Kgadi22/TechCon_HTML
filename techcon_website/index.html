@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TechCon 2024 — Home</title>
+  <style>
+    /* Minimal styles for accessibility and clarity */
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px; width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap; /* added line */
+    }
+    header, main, footer { max-width: 900px; margin: 0 auto; padding: 1rem; }
+    nav ul { list-style: none; padding: 0; display: flex; gap: 1rem; }
+    a:focus { outline: 3px solid #005fcc; }
+    .promo-video { max-width: 100%; }
+  </style>
+</head>
+<body>
+  <a class="visually-hidden" href="#main">Skip to main content</a>
+
+  <header>
+    <h1>TechCon 2024</h1>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="intro" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Welcome to TechCon 2024</h2>
+      <p>
+        TechCon is a three-day conference bringing together developers, designers, and technology leaders to
+        explore the latest trends in web, cloud, AI, and developer tools. Expect hands-on workshops, keynote
+        talks, and networking opportunities tailored for practitioners and leaders.
+      </p>
+
+      <figure>
+        <!-- Embedded promotional video with captions and accessible description -->
+        <video class="promo-video" controls width="720" preload="metadata" poster="promo-poster.jpg" aria-describedby="promo-desc">
+          <source src="promo.mp4" type="video/mp4">
+          <!-- Provide text fallback and download link if video isn't supported -->
+          Your browser does not support the video element. You can <a href="promo.mp4">download the promo video</a> instead.
+          <track kind="captions" src="promo-captions.vtt" srclang="en" label="English captions">
+        </video>
+        <figcaption id="promo-desc">
+          Short promo: highlights of TechCon 2024, including keynote speakers, session topics, and attendee experiences.
+          A full transcript is available <a href="promo-transcript.txt">here</a>.
+        </figcaption>
+      </figure>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <!-- Explicitly include the word "copyright" as requested. The year updates automatically via JS. -->
+      copyright © <span id="year">2024</span> TechCon. All rights reserved.
+    </p>
+    <noscript>
+      <p class="visually-hidden">JavaScript is disabled; the year shown may not be current.</p>
+    </noscript>
+  </footer>
+
+  <script>
+    // Set the current year dynamically so the page stays up to date.
+    (function(){
+      try {
+        var y = new Date().getFullYear();
+        document.getElementById('year').textContent = y;
+      } catch(e) {
+        // If JS fails, the static fallback year remains.
+        console.error('Failed to set year dynamically', e);
+      }
+    })();
+  </script>
+</body>
+</html>
